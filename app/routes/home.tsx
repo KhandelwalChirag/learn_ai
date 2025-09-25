@@ -5,6 +5,8 @@ import ResumeCard from "~/componenets/ResumeCard";
 import { usePuterStore } from "~/lib/puter";
 import { useNavigate } from "react-router";
 import { useEffect } from "react";
+
+
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "Resumind" },
