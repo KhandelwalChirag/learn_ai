@@ -2,9 +2,8 @@ import type { Route } from "./+types/home";
 import Navbar from "~/componenets/Navbar";
 import ResumeCard from "~/componenets/ResumeCard";
 import { usePuterStore } from "~/lib/puter";
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { useEffect, useState } from "react";
-import { Link } from "react-router";
 
 
 export function meta({}: Route.MetaArgs) {
@@ -45,7 +44,7 @@ export default function Home() {
     }
 
     loadResumes()
-  })
+  },[])
 
 
   return <main className="bg-[url('/images/bg-main.svg')] bg-cover ">
